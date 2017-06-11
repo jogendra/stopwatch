@@ -74,6 +74,18 @@
                                                 <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Daw-iv-mq5"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-HH-FK3">
+                                            <rect key="frame" x="8" y="614" width="359" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="Countdown">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="NUD-zI-BiL" kind="presentation" id="pc5-Gs-NIn"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <blurEffect style="light"/>
@@ -97,6 +109,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Countdown View Controller-->
+        <scene sceneID="2Zb-Km-eoe">
+            <objects>
+                <viewController id="NUD-zI-BiL" customClass="CountdownViewController" customModule="Stop_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kHf-UE-hMz"/>
+                        <viewControllerLayoutGuide type="bottom" id="gO2-hg-HQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TWE-Qq-MvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcg" translatesAutoresizingMaskIntoConstraints="NO" id="XEy-o4-28z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9V1-jr-Yot">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKo-ME-Tj1">
+                                        <rect key="frame" x="8" y="97" width="359" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.59650577910958902" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="0Es-7l-ekV">
+                                        <rect key="frame" x="6" y="214" width="363" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="slider:" destination="NUD-zI-BiL" eventType="valueChanged" id="Af0-M4-YDq"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-aY-eKE">
+                                        <rect key="frame" x="8" y="318" width="160" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.70028895547945202" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="start:" destination="NUD-zI-BiL" eventType="touchUpInside" id="ljT-cL-MMC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDf-4V-ILO">
+                                        <rect key="frame" x="207" y="318" width="160" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.70028895547945202" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="start:" destination="NUD-zI-BiL" eventType="touchUpInside" id="dKs-wN-B5A"/>
+                                            <action selector="stop:" destination="NUD-zI-BiL" eventType="touchUpInside" id="KTl-pm-rRd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pw-JB-Eue">
+                                        <rect key="frame" x="107" y="599" width="160" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.70028895547945202" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="back:" destination="NUD-zI-BiL" eventType="touchUpInside" id="VC4-TT-ZlV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.4960134845890411" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gO2-hg-HQa" firstAttribute="top" secondItem="XEy-o4-28z" secondAttribute="bottom" id="0yP-CC-coe"/>
+                            <constraint firstAttribute="trailing" secondItem="9V1-jr-Yot" secondAttribute="trailing" id="3Yy-Ia-mlG"/>
+                            <constraint firstItem="9V1-jr-Yot" firstAttribute="leading" secondItem="TWE-Qq-MvQ" secondAttribute="leading" id="8Ku-cx-f4R"/>
+                            <constraint firstItem="XEy-o4-28z" firstAttribute="top" secondItem="TWE-Qq-MvQ" secondAttribute="top" id="9Ch-Fs-hBM"/>
+                            <constraint firstItem="9V1-jr-Yot" firstAttribute="top" secondItem="TWE-Qq-MvQ" secondAttribute="top" id="GFb-zw-427"/>
+                            <constraint firstItem="XEy-o4-28z" firstAttribute="leading" secondItem="TWE-Qq-MvQ" secondAttribute="leading" id="L2s-XZ-MSV"/>
+                            <constraint firstItem="gO2-hg-HQa" firstAttribute="top" secondItem="9V1-jr-Yot" secondAttribute="bottom" id="cGf-kI-3pM"/>
+                            <constraint firstAttribute="trailing" secondItem="XEy-o4-28z" secondAttribute="trailing" id="p6G-sH-hRp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backOutlet" destination="1pw-JB-Eue" id="SLO-3f-7kA"/>
+                        <outlet property="label" destination="xKo-ME-Tj1" id="HsR-1d-QST"/>
+                        <outlet property="sliderOutlet" destination="0Es-7l-ekV" id="mod-J1-ZcJ"/>
+                        <outlet property="startOutlet" destination="CR5-aY-eKE" id="Ic9-Ox-REK"/>
+                        <outlet property="stopOutlet" destination="pDf-4V-ILO" id="iQM-Hl-O9O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vza-na-gtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
