@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeScreen: UILabel!
     
+    @IBOutlet weak var startOutlet: UIButton!
+    @IBOutlet weak var pauseOutlet: UIButton!
+    @IBOutlet weak var resetOutlet: UIButton!
+    
     var time = 0
     
     
@@ -26,6 +30,18 @@ class ViewController: UIViewController {
         timeScreen.layer.borderColor = UIColor.black.cgColor
         timeScreen.layer.borderWidth = 1.0
         timeScreen.layer.cornerRadius = 7.0
+        
+        pauseOutlet.layer.borderColor = UIColor.white.cgColor
+        pauseOutlet.layer.borderWidth = 1.0
+        pauseOutlet.layer.cornerRadius = 5.0
+        
+        startOutlet.layer.borderColor = UIColor.white.cgColor
+        startOutlet.layer.borderWidth = 1.0
+        startOutlet.layer.cornerRadius = 5.0
+        
+        resetOutlet.layer.borderColor = UIColor.white.cgColor
+        resetOutlet.layer.borderWidth = 1.0
+        resetOutlet.layer.cornerRadius = 5.0
         
     }
     
