@@ -1,7 +1,7 @@
 # stopwatch
 Basic Stop Watch (included Countdown feature) app for iOS devices. Created for learning purpose.
-<img src="https://github.com/imjog/stopwatch/blob/master/Stop%20Watch/countdown.png" width="300">
 <img src="https://github.com/imjog/stopwatch/blob/master/Stop%20Watch/stopwatch.png" width="300">
+<img src="https://github.com/imjog/stopwatch/blob/master/Stop%20Watch/countdown.png" width="300">
 ## How to use
 Just download source code and unzip the downloaded folder and opne project in Xcode.
 
