@@ -14,6 +14,8 @@
 		4035B4521EED229B004676E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4035B4501EED229B004676E6 /* LaunchScreen.storyboard */; };
 		407E45FB1EEDCB4E00DCAEFD /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E45FA1EEDCB4E00DCAEFD /* CountdownViewController.swift */; };
 		407E45FD1EEDCC4E00DCAEFD /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 407E45FC1EEDCC4E00DCAEFD /* 1.mp3 */; };
+		40C7D0631F16513400E8A4E1 /* stopwatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7D0621F16513400E8A4E1 /* stopwatch.png */; };
+		40C7D0651F16513B00E8A4E1 /* countdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7D0641F16513B00E8A4E1 /* countdown.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4035B4531EED229B004676E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407E45FA1EEDCB4E00DCAEFD /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		407E45FC1EEDCC4E00DCAEFD /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		40C7D0621F16513400E8A4E1 /* stopwatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopwatch.png; sourceTree = "<group>"; };
+		40C7D0641F16513B00E8A4E1 /* countdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countdown.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				407E45FA1EEDCB4E00DCAEFD /* CountdownViewController.swift */,
 				4035B44B1EED229B004676E6 /* Main.storyboard */,
 				4035B44E1EED229B004676E6 /* Assets.xcassets */,
+				40C7D0621F16513400E8A4E1 /* stopwatch.png */,
+				40C7D0641F16513B00E8A4E1 /* countdown.png */,
 				4035B4501EED229B004676E6 /* LaunchScreen.storyboard */,
 				407E45FC1EEDCC4E00DCAEFD /* 1.mp3 */,
 				4035B4531EED229B004676E6 /* Info.plist */,
@@ -131,9 +137,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				407E45FD1EEDCC4E00DCAEFD /* 1.mp3 in Resources */,
+				40C7D0651F16513B00E8A4E1 /* countdown.png in Resources */,
 				4035B4521EED229B004676E6 /* LaunchScreen.storyboard in Resources */,
 				4035B44F1EED229B004676E6 /* Assets.xcassets in Resources */,
 				4035B44D1EED229B004676E6 /* Main.storyboard in Resources */,
+				40C7D0631F16513400E8A4E1 /* stopwatch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
