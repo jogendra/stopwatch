@@ -1,4 +1,8 @@
 # stopwatch
+![Language](https://img.shields.io/badge/language-Swift%203-orange.svg)
+[![Twitter](https://img.shields.io/badge/twitter-@imjog24-blue.svg?style=flat)](https://twitter.com/imjog24)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 Basic Stop Watch (included Countdown feature) app for iOS devices. Created for learning purpose.
 <img src="https://github.com/imjog/stopwatch/blob/master/Stop%20Watch/stopwatch.png" width="300">
 <img src="https://github.com/imjog/stopwatch/blob/master/Stop%20Watch/countdown.png" width="300">
